@@ -1,59 +1,63 @@
 # Suspicious-Transaction-Detection
 
-🚨 Suspicious Transaction Detection
 
 This project is a Machine Learning Web Application built using Python, Streamlit, and scikit-learn to detect suspicious/fraudulent financial transactions. It allows users to explore datasets, train/load models, and predict fraud in real time through an interactive dashboard.
 
-📌 Table of Contents
 
-Project Overview
+# 📌 Table of Contents
 
-Features
+# Project Overview
 
-Folder Structure
+# Features
 
-Setup Instructions
+# Folder Structure
 
-How to Run
+# Setup Instructions
 
-Usage Guide
+# How to Run
 
-Dataset Information
+# Usage Guide
 
-Model Information
+# Dataset Information
 
-Screenshots
+# Model Information
 
-Contributing
+# Screenshots
 
-License
+# Contributing
 
-📖 Project Overview
+# License
+
+
+# 📖 Project Overview
 
 Financial fraud, especially in credit card and digital transactions, is a rising global challenge.
 This project demonstrates a suspicious transaction detection system using a machine learning model trained on transaction datasets.
 
-The dashboard has three major sections:
 
-🏠 Home Page → Introduction & navigation.
+# The dashboard has three major sections:
 
-📊 Dataset Viewer → Displays sample transaction data.
+# 🏠 Home Page → Introduction & navigation.
 
-🤖 Fraud Prediction → Takes transaction details as input and predicts whether it’s Fraudulent or Genuine.
+# 📊 Dataset Viewer → Displays sample transaction data.
 
-✨ Features
+# 🤖 Fraud Prediction → Takes transaction details as input and predicts whether it’s Fraudulent or Genuine.
 
-🏠 Home Page → Project overview & navigation.
 
-📊 Dataset Viewer → Explore financial transaction data.
+# ✨ Features
 
-🔎 Suspicious Transaction Prediction → Input transaction details → get fraud probability.
+# 🏠 Home Page → Project overview & navigation.
 
-⚡ Pre-trained Model → Stored in model.pkl for instant predictions.
+# 📊 Dataset Viewer → Explore financial transaction data.
 
-🛠 Training Script → Train your own model with train_model.py.
+# 🔎 Suspicious Transaction Prediction → Input transaction details → get fraud probability.
 
-📂 Folder Structure
+# ⚡ Pre-trained Model → Stored in model.pkl for instant predictions.
+
+# 🛠 Training Script → Train your own model with train_model.py.
+
+
+# 📂 Folder Structure
 STAH/
 │── app.py              # Main Streamlit dashboard  
 │── creditcard.csv      # Dataset (Kaggle Credit Card Fraud Dataset)  
@@ -62,22 +66,23 @@ STAH/
 │── train_model.py      # Script to train model  
 │── README.md           # Documentation  
 
-⚙️ Setup Instructions
 
-Clone the Repository
+# ⚙️ Setup Instructions
+
+# Clone the Repository
 
 git clone https://github.com/sohombose/suspicious-transaction-detection.git
 cd suspicious-transaction-detection
 
 
-Create Virtual Environment (Optional but Recommended)
+# Create Virtual Environment (Optional but Recommended)
 
 python -m venv venv
 source venv/bin/activate   # For Linux/Mac
 venv\Scripts\activate      # For Windows
 
 
-Install Dependencies
+# Install Dependencies
 
 pip install -r requirements.txt
 
@@ -86,67 +91,76 @@ pip install -r requirements.txt
 
 pip install streamlit scikit-learn pandas numpy
 
-▶️ How to Run
+# ▶️ How to Run
 
-Run the Streamlit app:
+# Run the Streamlit app:
 
 streamlit run app.py
 
 
-Then open the link displayed in the terminal (usually http://localhost:8501/).
+# Then open the link displayed in the terminal (usually http://localhost:8501/).
 
-🖥 Usage Guide
 
-Home Page → Learn about the project.
+# 🖥 Usage Guide
 
-Dataset Page → View sample dataset (creditcard.csv).
+# Home Page → Learn about the project.
 
-Prediction Page → Enter transaction details → Model predicts:
+# Dataset Page → View sample dataset (creditcard.csv).
 
-✅ Genuine Transaction
+# Prediction Page → Enter transaction details → Model predicts:
 
-🚨 Suspicious/Fraudulent Transaction
 
-📊 Dataset Information
+# ✅ Genuine Transaction
 
-Source: Kaggle – Credit Card Fraud Detection Dataset
+# 🚨 Suspicious/Fraudulent Transaction
 
-Total Transactions: 284,807
 
-Fraudulent Transactions: 492 (0.17%) → Imbalanced dataset
+# 📊 Dataset Information
 
-Features: Time, V1…V28, Amount, Class (0=Genuine, 1=Fraud)
+# Source: Kaggle – Credit Card Fraud Detection Dataset
 
-🧠 Model Information
+# Total Transactions: 284,807
 
-Algorithm used: Logistic Regression / Random Forest / (based on your training script)
+# Fraudulent Transactions: 492 (0.17%) → Imbalanced dataset
 
-Trained on imbalanced dataset → Resampling/SMOTE applied
+# Features: Time, V1…V28, Amount, Class (0=Genuine, 1=Fraud)
 
-Model exported as model.pkl for fast loading in app.py
 
-📸 Screenshots
+# 🧠 Model Information
+
+# Algorithm used: Logistic Regression / Random Forest / (based on your training script)
+
+# Trained on imbalanced dataset → Resampling/SMOTE applied
+
+# Model exported as model.pkl for fast loading in app.py
+
+
+# 📸 Screenshots
+
+
+<img width="1917" height="900" alt="Image" src="https://github.com/user-attachments/assets/c6d7a919-8524-4a41-9fcb-53e1f6610773" />
 
 
 <img width="1919" height="898" alt="Image" src="https://github.com/user-attachments/assets/e2debb53-c3a8-4ebe-8db9-82668f5c4bd9" />
 
-<img width="1917" height="900" alt="Image" src="https://github.com/user-attachments/assets/c6d7a919-8524-4a41-9fcb-53e1f6610773" />
 
 <img width="1919" height="890" alt="Image" src="https://github.com/user-attachments/assets/7dd134c3-2e04-4ec6-9ea2-59fe96e56542" />
 
 
-🤝 Contributing
 
-Contributions are welcome! 🎉
+# 🤝 Contributing
 
-Fork the repo
+# Contributions are welcome! 🎉
 
-Create a new branch (feature-new)
+# Fork the repo
 
-Commit changes
+# Create a new branch (feature-new)
 
-Open a Pull Request
+# Commit changes
 
-📜 License
+# Open a Pull Request
+
+
+# 📜 License
 
 This project is licensed under the MIT License.
